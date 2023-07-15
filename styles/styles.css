@@ -1,0 +1,307 @@
+/* General styles */
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url("hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.hero .btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #555;
+}
+
+/* Featured products section styles */
+.featured-products {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.featured-products h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.product {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.product img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Add hover effect and animation */
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product:hover:before {
+  opacity: 1;
+}
+
+.product:hover img {
+  transform: scale(1.2);
+}
+
+.product .btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.product .btn:hover {
+  background-color: #eee;
+}
+
+/* Testimonials section styles */
+.testimonials {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.testimonials h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.testimonial {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.testimonial p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.testimonial .author {
+  font-size: 14px;
+  font-style: italic;
+  color: #888;
+}
+
+/* Add hover effect and animation */
+.testimonial:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.testimonial:hover:before {
+  opacity: 1;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Additional advanced styling and animations */
+
+/* Animated underline effect for navigation links */
+nav ul li a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #ff8c00;
+}
+
+nav ul li a:hover:before,
+nav ul li a:focus:before {
+  transform: scaleX(1);
+}
+
+/* Gradient background color for hero section */
+.hero {
+  background-image: linear-gradient(to bottom right, #ff8c00, #ff007f);
+}
+
+/* Floating animation for featured products */
+.product {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Testimonial carousel animation */
+.testimonials {
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.testimonial.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonial:not(.active) {
+  pointer-events: none;
+}
+
+/* Animation delay for each testimonial */
+.testimonial:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.testimonial:nth-child(2) {
+  transition-delay: 0.3s;
+}
+
+.testimonial:nth-child(3) {
+  transition-delay: 0.6s;
+}
