@@ -1,0 +1,27 @@
+- index.html
+- styles/
+  - main.css
+  - components/
+    - header.css
+    - hero.css
+    - featured-products.css
+    - testimonials.css
+    - footer.css
+  - plugins/
+    - showcase-plugin.css
+- images/
+  - hero-bg.jpg
+  - product1.jpg
+  - product2.jpg
+  - product3.jpg
+  - product4.jpg
+- scripts/
+  - main.js
+  - components/
+    - header.js
+    - hero.js
+    - featured-products.js
+    - testimonials.js
+    - footer.js
+  - plugins/
+    - showcase-plugin.js
