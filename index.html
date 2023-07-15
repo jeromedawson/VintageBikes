@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintage Bikes Online Store</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Custom fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <style>
+    /* General styles */
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    /* Hero section styles */
+    .hero {
+      background-image: url("hero-bg.jpg");
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      color: #fff;
+      padding: 100px 0;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      font-size: 24px;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #555;
+    }
+
+    /* Featured products section styles */
+    .featured-products {
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .featured-products h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    .product {
+      display: inline-block;
+      width: 300px;
+      padding: 20px;
+      margin: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .product img {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 10px;
+    }
+
+    .product h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    /* Testimonials section styles */
+    .testimonials {
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .testimonials h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    .testimonial {
+      display: inline-block;
+      width: 300px;
+      padding: 20px;
+      margin: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header section -->
+  <header>
+    <nav>
+      <!-- Navigation menu -->
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome to Vintage Bikes Online Store</h1>
+        <p>Rediscover the Joy of Riding</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </section>
+  </header>
+
+  <!-- Main content section -->
+  <main>
+    <!-- Featured products section -->
+    <section class="featured-products">
+      <div class="container">
+        <h2>Featured Products</h2>
+        <div class="product">
+          <img src="product1.jpg" alt="Product 1">
+          <h3>Product 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac magna eu lectus tristique aliquet nec ut nisi.</p>
+          <a href="#" class="btn">View Details</a>
+        </div>
+        <div class="product">
+          <img src="product2.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac magna eu lectus tristique aliquet nec ut nisi.</p>
+          <a href="#" class="btn">View Details</a>
+        </div>
+        <div class="product">
+          <img src="product3.jpg" alt="Product 3">
+          <h3>Product 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac magna eu lectus tristique aliquet nec ut nisi.</p>
+          <a href="#" class="btn">View Details</a>
+        </div>
+        <div class="product">
+          <img src="product4.jpg" alt="Product 4">
+          <h3>Product 4</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac magna eu lectus tristique aliquet nec ut nisi.</p>
+          <a href="#" class="btn">View Details</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials section -->
+    <section class="testimonials">
+      <div class="container">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+          <p>"Great selection of vintage bikes. I found exactly what I was looking for!"</p>
+          <p class="author">- John Doe</p>
+        </div>
+        <div class="testimonial">
+          <p>"Excellent customer service and fast delivery. Highly recommended!"</p>
+          <p class="author">- Jane Smith</p>
+        </div>
+        <div class="testimonial">
+          <p>"Amazing quality and great prices. Will definitely shop here again!"</p>
+          <p class="author">- David Johnson</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Vintage Bikes Online Store. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
